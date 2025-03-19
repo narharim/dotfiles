@@ -1,0 +1,65 @@
+[/]
+background-color='#282936'
+background-image='/home/narhari/Pictures/GkvNux3W0AASusu.jpeg'
+background-image-mode='center'
+background-transparency-percent=13
+badge-color-set=false
+bold-color-set=false
+cell-height-scale=1.0
+cell-width-scale=1.0
+copy-on-select=true
+cursor-colors-set=false
+default-size-columns=85
+default-size-rows=26
+dim-transparency-percent=0
+draw-margin=24
+font='Monospace 20'
+foreground-color='#F8F8F2'
+highlight-colors-set=false
+login-shell=true
+palette=['#000000', '#FF5454', '#50FA7B', '#F1FA8C', '#BDBD9393F9F9', '#FF79C6', '#8BE8FD', '#BFBFBF', '#4D4D4D', '#FF6E67', '#5AF78D', '#F4F99D', '#CACAA8A8FAFA', '#FF92D0', '#9AEDFE', '#E6E6E6']
+paste-advanced-default=true
+paste-strip-trailing-whitespace=true
+prompt-on-delete-profile=true
+quake-hide-headerbar=true
+quake-specific-monitor=0
+quake-width-percent=74
+terminal-title-show-when-single=false
+theme-variant='dark'
+use-custom-command=false
+use-system-font=false
+use-tabs=true
+use-theme-colors=false
+visible-name='Default'
+warn-vte-config-issue=false
+window-style='borderless'
+
+[profiles]
+default='2b7c4080-0ddd-46c5-8f23-563fd3ba789d'
+list=['2b7c4080-0ddd-46c5-8f23-563fd3ba789d']
+
+[profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d]
+background-color='#282936'
+background-transparency-percent=13
+badge-color-set=false
+bold-color-set=false
+cell-height-scale=1.0
+cell-width-scale=1.0
+cursor-blink-mode='off'
+cursor-colors-set=false
+cursor-shape='block'
+custom-command='tmux -u'
+default-size-columns=80
+default-size-rows=26
+dim-transparency-percent=0
+draw-margin=24
+font='Monospace 18'
+foreground-color='#F8F8F2'
+highlight-colors-set=false
+login-shell=false
+palette=['#000000', '#FF5454', '#50FA7B', '#F1FA8C', '#BDBD9393F9F9', '#FF79C6', '#8BE8FD', '#BFBFBF', '#4D4D4D', '#FF6E67', '#5AF78D', '#F4F99D', '#CACAA8A8FAFA', '#FF92D0', '#9AEDFE', '#E6E6E6']
+terminal-bell='none'
+use-custom-command=true
+use-system-font=false
+use-theme-colors=false
+visible-name='Default'
