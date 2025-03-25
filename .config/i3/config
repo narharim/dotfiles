@@ -12,12 +12,7 @@
 set $mod Mod1
 
 ## Custom Background
-#exec_always feh --bg-scale ~/astronaut.png
-# Set wallpaper on startup
 exec --no-startup-id ~/bin/change_wallpaper.sh
-
-# Change wallpaper periodically (every hour)
-exec --no-startup-id watch -n 3600 ~/bin/change_wallpaper.sh
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -56,7 +51,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec tilix 
+bindsym $mod+Return exec alacritty 
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -222,12 +217,17 @@ bindsym $mod+m move workspace to output left
 bindsym $mod+Shift+period exec systemctl suspend
 
 
-assign [class="Tilix"] $ws1
+assign [class="Alacritty"] $ws1
 assign [class="Brave-browser"] $ws2
 assign [class="obsidian"] $ws3
 assign [class="obs"] $ws4
 
+exec --no-startup-id alacritty
+exec --no-startup-id brave-browser
+exec --no-startup-id obsidian
+
 for_window [class="Brave-browser"] border none
+for_window [class="obs"] border none
 
 
 ##Not working need to do some debugging using xev
