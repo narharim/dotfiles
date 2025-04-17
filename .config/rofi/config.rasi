@@ -11,8 +11,6 @@ configuration{
     sidebar-mode: true;
 }
 
-//@theme "gruvbox-dark-soft"
-
-@theme "/usr/share/rofi/themes/arthur.rasi"
 //display-run: " 🏃  Run ";
 //display-window: " 🪟  Window";
+@theme "/usr/share/rofi/themes/Arc-Dark.rasi"

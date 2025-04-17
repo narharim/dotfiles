@@ -77,6 +77,22 @@ cmp.setup({
     ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
     ['<C-y>'] = cmp.mapping.confirm({ select = true }),
     ['<C-Space>'] = cmp.mapping.complete(),
+    ['<C-l>'] = function(fallback)
+        local luasnip = require('luasnip')
+        if luasnip.expand_or_jumpable() then
+            luasnip.expand_or_jump()
+        else
+            fallback()
+        end
+    end,
+    ['<C-h>'] = function(fallback)
+        local luasnip = require('luasnip')
+        if luasnip.jumpable(-1) then
+            luasnip.jump(-1)
+        else
+            fallback()
+        end
+    end,
   }),
   snippet = {
     expand = function(args)
